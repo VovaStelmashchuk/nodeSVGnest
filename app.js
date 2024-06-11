@@ -4,17 +4,17 @@ var args = process.argv.slice(2);
 var port;
 
 if (args[0]) {
-  port = args[0];
+    port = args[0];
 } else {
-  port = 3000;
+    port = 3000;
 }
 
 app.use(express.static('public'));
 
 app.get('/', function (req, res) {
-  res.send('Hello World!');
+    res.send('Hello World!');
 });
 
 app.listen(port, function () {
-  console.log('nodeSVGnest websever listening on port ' + port + '!');
+    console.log('nodeSVGnest websever listening on port ' + port + '!');
 });
